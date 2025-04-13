@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&family=Rubik:ital,wght@0,600;1,600&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html {
+    background-image: url(img/fondo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 90% 100%;
+    background-attachment: fixed;
+    height: 100%;
+    overflow: hidden;
+}
+section{
+    position: relative; /* para poderla manejar a nuestro gusto */
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header{
+    position: absolute;
+    top: 5px;
+    left: 60px;
+    right: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+header .logo {
+    font-size: 3.5em;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 5px;
+    padding: 0 10px;
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 600;
+    display: inline-block;
+    color: rgb(246, 100, 68);
+    }
+
+ul{
+    list-style: none;
+}
+
+header .nav li a{
+    background-color: rgb(37, 134, 232);
+    color: azure;
+    text-decoration: none;
+    border-radius: 12px;
+    min-width: 150px;
+    text-align: center;
+    font-family: "Rubik", sans-serif;
+    padding: 8px 10px;
+    display: block;
+}
+
+header .nav li a ion-icon {
+    font-size: 1.5em;
+    vertical-align: middle;
+}
+
+header .nav li a:hover{
+    background-color: rgb(246, 100, 68);
+}
+
+header .nav > li {
+    float: left;
+}
+
+header .nav li ul{
+    display: none;
+    z-index: 1;
+    position: absolute;
+    min-width: 150px;
+}
+
+header .nav li:hover > ul{
+    display: block;
+}
+
+header .nav li ul li {
+    position: relative;
+}
+
+header .nav li ul li ul {
+    right: -150px;
+    top: 0px;
+}
+
+
+/*Contenido de la web*/
+
+.contenido{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 0px;
+    bottom: 150px;
+}
+.contenido .tituloBox{
+    position: relative;
+    max-width: 600px;
+    text-align: center;
+    left: 55px;
+}
+
+.contenido .tituloBox h2{
+    font-size: 2.2em;
+    color: black;
+    margin-top: 30px;
+    font-family: "Rubik", sans-serif;
+}
+
+.contenido .tituloBox h2 a{
+    background: rgb(255, 175, 50);
+    color: white;
+    padding: 5px 10px;
+    font-family: "Rubik", sans-serif;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.contenido .tituloBox h2 a:hover{
+    color:white;
+    background-color: rgb(37, 134, 232);
+    transition: 0.5s;
+}
+
+.contenido .tituloBox a{
+    text-decoration: none;
+    color: rgb(255, 175, 50);
+    padding: 10px 20px;
+    margin: left 20px;
+    border-radius: 20px;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+
+.frase{
+    font-size: 0.5em;
+    text-transform: uppercase;
+    color: white;
+}
+
+/*Copyright*/
+.copyright{
+    position: absolute;
+    bottom: 2px;
+    text-align: center;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.copyright p{
+    color: rgb(239, 96, 25);
+    text-align: center;
+}
+
+/*Redes sociales*/
+.redesSociales{
+    position: relative;
+    justify-content: space-between;
+    list-style: none;
+    right: 10px;
+}
+.redesSociales li{
+    padding: 10px;
+}
+.redesSociales li a{
+    color: rgb(37, 134, 232);
+    font-size: 2.5em;
+    transition: 0.3s;
+}
+.redesSociales li:hover a{
+    color: rgb(239, 96, 25);
+}
+
