@@ -450,6 +450,9 @@ label {
 .form-box a:hover {
     text-decoration: underline;
 }
+.cerrar:hover {
+    color: rgb(246, 100, 68);
+}
 
 
 
@@ -521,43 +524,4 @@ html.quienes-somos{
     margin-top: 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     
-}
-
-.enlace-index{
-    text-decoration: none;
-    color: inherit;
-    cursor: pointer;
-}
-
-/*Areas de actuacion*/
-.areas {
-    display: none;
-    position: absolute;
-    right: 100%;
-    background: transparent;
-    top: 0;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    padding: 0;
-    min-width: 150px;
-    z-index: 2;
-    border-radius: 12px;
-}
-.areas li {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
-}
-
-.areas li a {
-    display: block;
-    padding: 10px 15px;
-    border-radius: 5px; 
-}
-
-.areas li a:hover {
-    background: rgba(0, 0, 0, 0.1); 
-    color:white; 
-}
-
-
-nav .nav > li:hover > .areas {
-    display: block;
 }
