@@ -13,29 +13,31 @@
 </head>
 
 <body>
+
+<nav>
+    <ul class="nav">
+        <li>
+            <a href="#"><ion-icon name="menu-outline"></ion-icon> HOME</a>
+            <ul>
+                <li>
+                    <a href="#">Quienes somos</a>
+                </li>
+                <li>
+                    <a href="#">Areas de actuación</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);" onclick="abrirFormulario()">Contacto</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+
 <section>
     <header>
         <p href="#" class="logo">
-            <span>SAS ENTRADAS</span>
-          </p>
-        
-        <ul class="nav">
-            <li>
-                <a href="#"><ion-icon name="menu-outline"></ion-icon> HOME</a>
-                <ul>
-                    <li>
-                        <a href="#">Quienes somos</a>
-                    </li>
-                    <li>
-                        <a href="#">Areas de actuación</a>
-                    </li>
-                    <li>
-                        <a href="#">Contacto</a>
-                    </li>
-                </ul>
-            </li>
-            
-        </ul>
+            <span>SAS TICKETS</span>
+        </p>
     </header>
     <div class="contenido">
         <div class="tituloBox">
@@ -67,10 +69,103 @@
             </li>
          </ul>
     </aside>
+    
     <div class="copyright">
-        <p>&copy;Web creada para la actividad 5 de la materia Lenguaje de Marcas del CFGS DAM de la UNIR</p>
+        <p>&copy;Web creada para la Actividad 5 de la materia Lenguaje de Marcas CFGS DAM / UNIR</p>
         </div>
+        <!--Formulario de Registro-->
+        <div id="formularioContacto" class="container1">
+            <div class="form-box">
+                <span class="cerrar" onclick="cerrarFormulario()">&times;</span>
 
+                <div id="formRegistro">
+                    
+                    <h2>Registro de Usuario</h2>
+
+                    <form action="mailto:1csorayaturegano@gmail.com" method="post">
+                    <br>Nombre: <input type="text" placeholder="Nombre" required>
+                    <br>Apellidos: <input type="text" placeholder="Apellidos" required>
+                    <br>Edad: <input type="number" placeholder="Edad" required>
+                    <br> Email: <input type="email" placeholder="Correo Electronico" required>
+                    <br>Telefono: <input type="tel" placeholder="Telefono fijo/ Movil (Opcional)">
+                    <br>Contraseña: <input type="password" placeholder="Contraseña" required>
+                    <br>Repite la contraseña: <input type="password" placeholder="Confirme la contraseña" required>
+
+                    <br>Parque favorito
+                    <select name="Parques" id="parque" required>
+                        <option value="atracciones">Parque de atracciones</option>
+                        <option value="acuatico">Parque Acuatico</option>
+                        <option value="ambos">¡Ambos me flipan!</option>
+                    </select>
+
+                    <fieldset>
+                        <label class="term">
+                        <legend>¿Has estado en algun parque tematico con anterioridad?</legend>
+                        <br><input type="radio" name="eleccion" value="si">SI
+                        <br><input type="radio" name="eleccion" value="no"> NO
+                        </label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>¿Qué parque o atraccion te gustaria visitar?:</legend>
+                        <label for="comentario"></label>
+                        <textarea name="comentario" id="comentario" placeholder="Escribe aquí tu comentario"></textarea>
+                    </fieldset>
+
+                    <fieldset>
+                    <label class="term">
+                        <input type="checkbox" required>
+                        Acepto los términos y condiciones
+                    </label>
+                    </fieldset>
+
+                    <button class="btn">Registrarse</button>
+                    <p>¿Ya tienes una cuenta? <a href="#" onclick="mostrarLogin()">Inicia sesión</a></p>
+                    </form>
+                </div>
+
+        <!--Login-->
+
+                <div id="formLogin" class="login">
+
+                    <h2>Iniciar Sesion</h2>
+
+                    <form action="mailto:1csorayaturegano@gmail.com" method="post">
+                    <br>Usuario: <input type="email" placeholder="correo electronico" requered>
+                    <br>Contraseña: <input type="password" placeholder="contraseña" required>
+
+                    <label class="recuerdo">
+                        <input type="checkbox"> Recordarme
+                    </label>
+
+                    <button class="btn">Entrar</button>
+                    </form>
+
+                    
+                    <p>¿No tienes cuenta? <a href="#" onclick="mostrarRegistro()">Regístrate</a></p>
+
+                </div>
+            </div>
+        </div>
 </section>
+<script>
+    function abrirFormulario() {
+        document.getElementById('formularioContacto').style.display = 'flex';
+        document.getElementById('formaRegistro').style.display = 'block';
+        document.getElementById('formLogin').style.display = 'none';
+    }
+    function cerrarFormulario() {
+        document.getElementById('formularioContacto').style.display = 'none';
+    }
+    function mostrarLogin() {
+        document.getElementById('formRegistro').style.display = 'none';
+        document.getElementById('formLogin').style.display = 'block';
+    }
+    function mostrarRegistro() {
+        document.getElementById('formLogin').style.display = 'none';
+        document.getElementById('formRegistro').style.display = 'block';
+    }
+</script>
+
 </body>
 </html>
