@@ -451,6 +451,9 @@ label {
 .form-box a:hover {
     text-decoration: underline;
 }
+.cerrar:hover {
+    color: rgb(246, 100, 68);
+}
 
 
 
