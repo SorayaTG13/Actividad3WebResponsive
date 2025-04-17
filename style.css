@@ -96,6 +96,7 @@ nav .nav li:hover > ul{
     display: block;
 }
 
+
 /*Contenido de la web*/
 
 .contenido{
@@ -352,19 +353,12 @@ nav .nav li:hover > ul{
         z-index: 1;
     }
 }
-.term{
-    font-size: 0.9em;
-     display: flex; 
-     margin: 10px 0;
-     align-items: center;
-    }
-.login{
-    display: none;
-}
-.recuerdo {
-    font-size: 0.9em;
-    display: block; 
-    margin: 10px 0;
+/* Formulario y LOgin*/
+body {
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 .container1 {
     position: fixed;
@@ -377,44 +371,59 @@ nav .nav li:hover > ul{
     justify-content: center;
     align-items: center;
     background-color: rgba(0,0,0,0.6);
-    z-index: 999;
     overflow: auto;
     box-sizing: border-box;
 }
+
 .form-box {
-    font-family: "Rubik", sans-serif;
+    font-family: 'Rubik' sans-serif;
     background-color: #fff;
     padding: 30px 40px;
     border-radius: 16px;
     box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    max-width: 550px;
     width: 100%;
-    max-width: 450px;
-    position: relative;
     text-align: left;
-    box-sizing: border-box;
-    overflow-y: auto;
     max-height: 90vh;
-    
+    overflow-y: auto;
 }
-.form-box h2 ´{
+
+.form-box h2 {
+    font-family: 'Rubik', sans-serif;
     margin-bottom: 20px;
     color: rgb(246, 100, 68);
+    font-size: 24px;
 }
+
 .form-box input, select, textarea {
-    font-family: "Rubik", sans-serif;
+    font-family: 'Rubik', sans-serif;
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
     border-radius: 12px;
+    border: 1px solid #ccc;
     font-size: 1em;
-    box-sizing: border-box;
 }
+
+input, textarea, select, button {
+    font-family: 'Rubik', sans-serif;
+} 
 
 textarea {
     resize: none;
 }
+
+.form-box button {
+    font-family: 'Rubik', sans-serif;
+}
+label {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
 .btn {
-    background-color: rgb(255, 175, 50);
+    background-color:orange;
     color: black;
     padding: 10px;
     border: none;
@@ -422,28 +431,24 @@ textarea {
     font-weight: bold;
     font-size: 1em;
     cursor: pointer;
-    transition: 0.3s;
     width: 100%;
+    transition: background-color 0.3s ease;
 }
+
 .btn:hover {
-    background-color: rgb(37, 134, 232);
+    background-color: #2d4469;
+    color: white;
+    
 }
+
 .form-box a {
-    color: rgb(37, 134, 232);
+    color: #2d4469;
     text-decoration: none;
     font-weight: 600;
 }
-.cerrar {
-    position: absolute;
-    top: 8px;
-    right: 12px;
-    font-size: 1.5em;
-    color: #666;
-    cursor: pointer;
-    font-weight: bold;
-}
-.cerrar:hover {
-    color: rgb(246, 100, 68);
+
+.form-box a:hover {
+    text-decoration: underline;
 }
 
 
@@ -516,4 +521,37 @@ html.quienes-somos{
     margin-top: 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     
+}
+
+/*Areas de actuacion*/
+.areas {
+    display: none;
+    position: absolute;
+    right: 100%;
+    background: transparent;
+    top: 0;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 0;
+    min-width: 150px;
+    z-index: 2;
+    border-radius: 12px;
+}
+.areas li {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
+}
+
+.areas li a {
+    display: block;
+    padding: 10px 15px;
+    border-radius: 5px; 
+}
+
+.areas li a:hover {
+    background: rgba(0, 0, 0, 0.1); 
+    color:white; 
+}
+
+
+nav .nav > li:hover > .areas {
+    display: block;
 }
