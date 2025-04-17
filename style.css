@@ -523,6 +523,12 @@ html.quienes-somos{
     
 }
 
+.enlace-index{
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
 /*Areas de actuacion*/
 .areas {
     display: none;
