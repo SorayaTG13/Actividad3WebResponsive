@@ -523,8 +523,13 @@ html.quienes-somos{
     border-radius: 8px;
     text-align: center;
     margin-top: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);  
+}
+
+.enlace-index{
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
 }
 
 /*Areas de actuacion*/
