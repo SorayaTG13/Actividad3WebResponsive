@@ -456,8 +456,6 @@ label {
 }
 
 
-
-
 /*QUIÉNES SOMOS*/
 html.quienes-somos{
     background-image: none;
@@ -465,13 +463,15 @@ html.quienes-somos{
 
 .qs-section{
     margin:0;
-    padding: 0;
+    padding: 5px 0 60px 0;
+    position: relative;
 }
 
 .qs-contenedor{
     display: flex;
-    width: 99vw; /*Ocupar todo el ancho de la pantalla*/
-    height: 83vh;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 100vh;
 }
 
 .qs-img{
@@ -531,6 +531,153 @@ html.quienes-somos{
     color: inherit;
     cursor: pointer;
 }
+
+/*-----------------------------------------------------*/
+/*@media*/
+/*Pantallas de más de 1300px*/
+@media (min-width: 1300px){
+    .quienes-somos .qs-contenedor{
+        max-width: 100%;
+        margin: 0;
+    }
+}
+
+/*Tablets en posición vertical*/
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait){
+    .quienes-somos .qs-contenedor {
+        flex-direction: column;
+        height: auto;
+        margin-top: 70px;
+    }
+
+    .quienes-somos .qs-img, 
+    .quienes-somos .qs-texto {
+        flex: none;
+        width: 100%;
+        height: auto;
+    }
+
+    .quienes-somos .qs-img img{
+        height: auto;
+        border-radius: 0;
+    }
+
+    .quienes-somos .qs-texto{
+        padding: 30px 20px;
+        border-radius: 0;
+    }
+
+    .quienes-somos .qs-img{
+        order:2;
+    }
+
+    .quienes-somos{
+        order:1;
+    }
+
+}
+
+/*Tablets en posición horizontal*/
+@media (min-width: 1024px) and (max-width: 1300px) and (orientation: landscape){
+    .quienes-somos .qs-contenedor {
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    .quienes-somos .qs-img, 
+    .quienes-somos .qs-texto {
+        flex: 1 1 50%;
+        min-height: 300px;
+    }
+
+    .quienes-somos .qs-texto{
+        padding: 35px;
+    }
+}
+
+/*Móviles en posición vertical*/
+@media (max-width: 600px) and (orientation: portrait){
+    .quienes-somos .copyright{
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 5px 0;
+    }
+
+    .quienes-somos .qs-contenedor {
+        flex-direction: column;
+        height: auto;
+        margin-top: 110px;
+    }
+
+    .quienes-somos .qs-img, 
+    .quienes-somos .qs-texto{
+        width: 100%;
+        flex: none;
+        height: auto;
+    }
+
+    .quienes-somos .qs-img img{
+        height: auto;
+        border-radius: 0;
+    }
+
+    .quienes-somos .qs-texto{
+        padding: 25px 15px;
+        border-radius: 0;
+    }
+
+    .quienes-somos .qs-texto h2{
+        font-size: 1.5em;
+    }
+
+    .quienes-somos .qs-texto p{
+        font-size: 1em;
+    }
+
+    .quienes-somos .qs-texto .destacado{
+        font-size: 1.1em;
+        padding: 12px;
+    }
+
+    .quienes-somos .qs-img{
+        order:2;
+    }
+
+    .quienes-somos{
+        order:1;
+    }
+}
+
+/*Móviles en posición horizontal*/
+@media (max-width: 1023px) and (orientation: landscape){
+    .quienes-somos .qs-contenedor{
+        flex-direction: column;
+        height: auto;
+        margin-top: 110px;
+       
+    }
+
+    .quienes-somos .qs-img, 
+    .quienes-somos .qs-texto{
+        width: 100%;
+        flex: none;
+        height: auto;
+    }
+
+    .quienes-somos .qs-texto{
+        padding: 30px 20px;
+        border-radius: 0;
+    }
+
+    .quienes-somos .qs-img{
+        order:2;
+    }
+
+    .quienes-somos{
+        order:1;
+    }
+}
+
 
 /*Areas de actuacion*/
 .areas {
