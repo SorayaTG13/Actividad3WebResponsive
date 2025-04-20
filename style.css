@@ -124,7 +124,7 @@ nav .nav li:hover > ul{
 }
 
 .contenido .tituloBox h2 a{
-    background: rgb(255, 175, 50);
+    background:rgb(255, 175, 50);
     color: white;
     padding: 5px 10px;
     font-family: "Rubik", sans-serif;
@@ -165,7 +165,7 @@ nav .nav li:hover > ul{
     user-select: none;
 }
 .copyright p{
-    color: rgb(239, 96, 25);
+    color: rgb(246, 100, 68);
     text-align: center;
 }
 
@@ -392,7 +392,7 @@ body {
 .form-box h2 {
     font-family: 'Rubik', sans-serif;
     margin-bottom: 20px;
-    color: rgb(246, 100, 68);
+    color: rgb(239, 96, 25);
     font-size: 24px;
 }
 
@@ -424,7 +424,7 @@ label {
 }
 
 .btn {
-    background-color:orange;
+    background-color:rgb(239, 96, 25);
     color: black;
     padding: 10px;
     border: none;
@@ -452,9 +452,79 @@ label {
     text-decoration: underline;
 }
 .cerrar:hover {
-    color: rgb(246, 100, 68);
+    color: rgb(239, 96, 25);
 }
 
+@media (min-width: 1300px) {
+    .form-box {
+      max-width: 700px;
+      font-size: 1.1em;
+      padding: 40px 60px;
+    }
+  
+    .form-box h2 {
+      font-size: 28px;
+    }
+  
+    .btn {
+      font-size: 1.1em;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .form-box {
+      max-width: 90%;
+      padding: 30px;
+      font-size: 1em;
+    }
+  
+    .form-box h2 {
+      font-size: 22px;
+    }
+  
+    .btn {
+      font-size: 1em;
+    }
+  
+    label {
+      flex-wrap: wrap;
+      font-size: 0.95em;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .container1 {
+      padding: 20px 10px;
+      align-items: flex-start;
+    }
+  
+    .form-box {
+      max-width: 100%;
+      padding: 20px;
+      font-size: 0.95em;
+      margin-top: 60px;
+    }
+  
+    .form-box h2 {
+      font-size: 20px;
+      text-align: center;
+    }
+  
+    input, textarea, select {
+      font-size: 1em;
+    }
+  
+    .btn {
+      padding: 12px;
+      font-size: 1em;
+    }
+  
+    label {
+      flex-direction: column;
+      align-items: flex-start;
+      font-size: 0.9em;
+    }
+  }
 
 /*QUIÉNES SOMOS*/
 html.quienes-somos{
@@ -722,7 +792,7 @@ nav .nav > li:hover > .areas {
     display: block;
 }
 .areas li a:hover {
-    background-color: #f4a261;  /* Color para hover */
+    background-color:rgb(239, 96, 25);  /* Color para hover */
     color: white;
 }
 nav .nav > li:hover > .areas {
@@ -737,10 +807,7 @@ nav .nav > li:hover > .areas {
     text-decoration: none;
     display: block;
 }
-.areas li a:hover {
-    background-color: #f4a261;  /* Color para hover */
-    color: white;
-}
+
 .region {
     display: none;
     margin: 50px auto; 
@@ -769,7 +836,7 @@ nav .nav > li:hover > .areas {
 }
 .parque {
     background-color: #fff;
-    color: #e67e22;
+    color: rgb(239, 96, 25);
     font-weight: bold;
     font-size: 24px;
     border-radius: 15px;
@@ -800,8 +867,8 @@ nav .nav > li:hover > .areas {
 
 .parque .bnt-compra {
     display: inline-block;
-    background-color: #e67e22;
-    color: white;
+    background-color: rgb(239, 96, 25);
+    color: black;
     text-decoration: none;
     padding: 10px 20px;
     border-radius: 25px;
@@ -810,6 +877,102 @@ nav .nav > li:hover > .areas {
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 .parque .bnt-compra:hover {
-    background-color: #d35400;
+    background-color: #2d4469;
+    color: white;
     transform: scale(1.1); 
 }
+
+
+@media (min-width: 1300px) {
+    .parque {
+      width: 60%;
+      font-size: 1.2em;
+      padding: 25px;
+    }
+  
+    .parque .descrip {
+      font-size: 1.1em;
+    }
+  
+    .parque .bnt-compra {
+      font-size: 1.1em;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .parques {
+      gap: 15px;
+    }
+  
+    .parque {
+      width: 45%;
+      font-size: 1em;
+    }
+  
+    .parque img {
+      height: 180px;
+    }
+  
+    .parque .descrip {
+      font-size: 1em;
+    }
+  
+    .parque .bnt-compra {
+      font-size: 1em;
+      padding: 8px 16px;
+    }
+  
+    .region h2 {
+      font-size: 2em;
+    }
+  }
+  
+
+  @media (max-width: 767px) {
+    .parques {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .parque {
+      width: 100%;
+      font-size: 1em;
+      padding: 20px;
+    }
+  
+    .parque img {
+      height: 160px;
+    }
+  
+    .parque .descrip {
+      font-size: 0.95em;
+    }
+  
+    .parque .bnt-compra {
+      font-size: 1em;
+      padding: 10px;
+    }
+  
+    .region {
+      padding: 10px;
+      margin: 20px auto;
+    }
+  
+    .region h2 {
+      font-size: 1.8em;
+      margin-bottom: 15px;
+    }
+  
+    .areas {
+      position: static;
+      width: 100%;
+      background: #f7f7f7;
+      box-shadow: none;
+      padding: 10px 0;
+    }
+  
+    .areas li a {
+      padding: 12px;
+      font-size: 1em;
+    }
+  }
