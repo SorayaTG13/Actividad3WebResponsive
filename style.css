@@ -610,6 +610,8 @@ label {
     font-size: 3em;
     margin-bottom: 20px;
     color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
 }
 
 .qs-texto p{
@@ -632,9 +634,14 @@ label {
     font-size: 2em !important;
     margin-top: 20px;
     color: orange;
-    font-weight: bold;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
+    font-weight: bold !important;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9)!important;
 }
+
+.qs-texto p{
+    font-weight: 500;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);
+} 
 
 .quienes-somos nav{
     z-index: 999;
@@ -693,16 +700,20 @@ label {
 /*Tablets en vertical*/
 @media (min-width: 768px) and (orientation:portrait){
     .qs-texto h1{
-        font-size: 2.3rem;
+        font-size: 2.4rem;
+        font-weight: bold;
+        text-shadow: rgba(0, 0, 0, 0.2);
     }
 
     .qs-texto p{
         font-size: 1.3rem;
+        font-weight: 530;
+        text-shadow: rgba(0, 0, 0, 0.2);
         
     }
 
     .qs-destacado{
-        font-size: 2.6rem !important;
+        font-size: 2.2rem !important;
     }
 }
 
@@ -740,19 +751,17 @@ label {
     }
 
     .qs-texto h1{
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
     .qs-texto p{
-        font-size: 0.95rem;
+        font-size: 1rem;
     }
 
     .qs-destacado{
-        font-size: 1.2rem !important;
+        font-size: 1.5rem !important;
     }
 }
-
-
 
 /*Areas de actuacion*/
 .areas {
