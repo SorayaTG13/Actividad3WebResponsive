@@ -635,15 +635,15 @@ label {
     padding-top: 30px;
 }
 
-.quienes-somos2 nav{
+.quienes-somos nav{
     z-index: 999;
 }
 
-.quienes-somos2 {
+.quienes-somos {
     background-image: none;
 }
 
-.quienes-somos2 .copyright{
+.quienes-somos .copyright{
     z-index: 3;
     width: 100%;
     text-align: center;
