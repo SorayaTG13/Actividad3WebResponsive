@@ -658,6 +658,102 @@ label {
     cursor: pointer;
 }
 
+/*----------------------------------------------------------------*/
+/*MEDIA QUIÉNES SOMOS*/
+/*Pantallas de más de 1300px*/
+@media (min-width: 1300px){
+    .qs-texto h1{
+        font-size: 3rem;
+    }
+
+    .qs-texto p {
+        font-size: 1.4rem;
+    }
+
+    .qs-destacado{
+        font-size: 1.8rem !important;
+    }
+}
+
+/*Tablets en horizontal*/
+@media (min-width: 768px) and (orientation:landscape){
+    .qs-texto h1{
+        font-size: 2.2rem;
+    }
+
+    .qs-texto p{
+        font-size: 1.1rem;
+    }
+
+    .qs-destacado{
+        font-size: 1.3rem !important;
+    }
+}
+
+/*Tablets en vertical*/
+@media (min-width: 768px) and (orientation:portrait){
+    .qs-texto h1{
+        font-size: 2.3rem;
+    }
+
+    .qs-texto p{
+        font-size: 1.3rem;
+        
+    }
+
+    .qs-destacado{
+        font-size: 2.6rem !important;
+    }
+}
+
+/*Móviles en horizontal*/
+@media (max-width: 896px) and (orientation:landscape){
+    .qs-contenido{
+        padding-top: 8rem;
+    }
+
+    .qs-texto{
+        padding: 1rem;
+        margin: 0 auto;
+        max-width: 100%;
+        box-sizing: border-box;
+        overflow-wrap: break-word;
+    }
+
+    .qs-texto h1{
+        font-size: 1.6rem;
+    }
+
+    .qs-texto p{
+        font-size: 1rem;
+    }
+}
+
+/*Móviles en vertical*/
+@media (max-width: 767px) and (orientation: portrait){
+    .qs-texto{
+        padding: 1rem;
+        margin: 0 auto;
+        max-width: 100%;
+        box-sizing: border-box;
+        overflow-wrap: break-word;
+    }
+
+    .qs-texto h1{
+        font-size: 1.5rem;
+    }
+
+    .qs-texto p{
+        font-size: 0.95rem;
+    }
+
+    .qs-destacado{
+        font-size: 1.2rem !important;
+    }
+}
+
+
+
 /*Areas de actuacion*/
 .areas {
     display: none;
