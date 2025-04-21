@@ -628,11 +628,12 @@ label {
     text-align: left;
 }
 
-.qs-destacado{
+.qs-destacado {
+    font-size: 2em !important;
+    margin-top: 20px;
     color: rgb(239, 96, 25);
     font-weight: bold;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
-    padding-top: 30px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
 }
 
 .quienes-somos nav{
