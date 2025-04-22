@@ -400,6 +400,7 @@ body {
     box-sizing: border-box;
 }
 .container1 {
+    
     position: fixed;
     padding: 10px;
     top: 0px;
@@ -416,7 +417,7 @@ body {
 
 .form-box {
     font-family: 'Rubik' sans-serif;
-    background-color: #fff;
+    background-color:rgba(255, 255, 255, 0.5);
     padding: 30px 40px;
     border-radius: 16px;
     box-shadow: 0 0 15px rgba(0,0,0,0.3);
@@ -435,31 +436,24 @@ body {
 }
 
 .form-box input, select, textarea {
+    background-color: rgba(255, 255, 255, 0.5);
     font-family: 'Rubik', sans-serif;
-    width: 100%;
     padding: 10px;
-    margin-bottom: 15px;
+    margin: 12px;
     border-radius: 12px;
-    border: 1px solid #ccc;
     font-size: 1em;
-}
-
-input, textarea, select, button {
-    font-family: 'Rubik', sans-serif;
 } 
-
-textarea {
-    resize: none;
-}
 
 .form-box button {
     font-family: 'Rubik', sans-serif;
 }
+
 label {
-    display: inline-flex;
+    display: inline-flex ; 
     align-items: center;
-    margin-right: 10px;
+    margin-right: 0px;
 }
+
 
 .btn {
     background-color:rgb(239, 96, 25);
