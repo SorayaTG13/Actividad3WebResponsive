@@ -566,44 +566,54 @@ label {
 
 /*QUIÉNES SOMOS*/
 .qs-contenido{
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    background-image: url(img/qs2.jpg);
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 40px;
-    box-sizing: border-box;
-    justify-content: flex-end;
-    padding-right: 60px;
-    animation: slideUp 1.5s ease-out;
+    position: relative; /*Posiciona el elemento en relación a su contenedor*/
+    width: 100%; /*Ocupa el ancho completo del contenedor*/
+    height: 100vh;/*Se adapta al 100% de la altura de la ventana*/
+    background-image: url(img/qs2.jpg); /*Imagen de fondo*/
+    background-size: cover; /*Hace que la imagen ocupe todo el contenedor*/
+    background-position: center;/*Centra la imagen de fondo*/
+    display: flex;/*Hace que los elementos hijos del contenedor se comporten de manera más flexible
+                pudiendo utilizar elementos como justify-content, align-items, etc.*/
+    align-items: center; /*Puede usarse gracias al display:flex. Centra verticalmente todos los 
+                        elementos hijos*/
+    justify-content: center;/*Puede usarse gracias a display:flex. Centra horizontalmente todos 
+                            los elementos hijos*/
+    text-align: center;/*Centra el texto*/
+    padding: 40px;/*Espaciado en el interior del contenedor*/
+    box-sizing: border-box;/*Incluye el tamaño del borde y del padding. De esta manera los tamaños
+                            no se distorsionan*/
+    justify-content: flex-end;/*Alinea horizontalmente los elementos al final*/
+    padding-right: 60px; /*Espaciado en el interior del contenedor. Añade 60px a la parte 
+                            derecha*/
+    animation: slideUp 1.5s ease-out; /*Aplica una animación de deslizamiento hacia arriba*/
 }
 
+/*Configuración de animación de deslizamiento hacia arriba*/
 @keyframes slideUp{
     0%{
-        transform: translateY(50px);
-        opacity: 0;
+        transform: translateY(50px); /*Ubica todo el contenido 50px más abajo de la ocupación original*/
+        opacity: 0; /*Convierte todo el contenido transparente */
     }
 
     100%{
-        transform: translateY(0);
-        opacity: 1;
+        transform: translateY(0); /*Provoca el moviminento del contenido para que ocupe su 
+                                ubicación original*/
+        opacity: 1;/*Revierte el efecto transparente anterior haciéndolo totalmente visible
+                    de nuevo*/
     }
 }
 
 .qs-fondo {
-    position: absolute;
-    top: 0;
+    position: absolute; /*Hace que el fondo se posiciones sobre el contenedor*/
+    top: 0; /*top, left, right, bottom: hace que el fondo que estamos definiendo
+             ocupe todo el contenedor*/
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.1);
-    z-index: 1;
-    border-radius: 0;
+    background: rgba(0, 0, 0, 0.1); /*Genera un fondo negro*/
+    z-index: 1; /*Cuanto más alto es el número, mayor prioridad de superponerse a otros
+                elementos*/
+    border-radius: 0; /*Bordes sin redondear*/
 }
 
 .qs-header{
@@ -612,48 +622,55 @@ label {
 }
 
 .qs-texto h1{
-    font-size: 3em;
-    margin-bottom: 20px;
-    color: white;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
-    font-weight: bold;
+    font-size: 3em; /*Tamaño del texto. El tamaño em es relativo y es más apropiado para
+                    diseños responsive*/
+    margin-bottom: 20px;/*Aporta espacio para lo que viene tras el título. Es importante
+                        para aportar aire al diseño*/
+    color: white; /*Color de la fuente*/
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /*Añade una sombra al texto para que
+                                                    no esté tan pegada al fondo. Aportar
+                                                    claridad en la lectura.*/
+    font-weight: bold; /*Convierte el texto en negrita*/
 }
 
 .qs-texto p{
     font-size: 1em;
-    line-height: 1.8;
+    line-height: 1.8; /*Espacio entre las líneas*/
 }
 
 .qs-texto{
-    position: relative;
+    position: relative; /*Al contrario que position: absolute. Los elementos hijo se posicionan
+                        respecto a él, pero permite mover los elementos ligeramente*/
     z-index: 2;
-    max-width: 800px;
+    max-width: 800px; /*Máximo ancho que ocupa en su contenedor*/
     color: white;
-    font-family: sans-serif;
-    margin-left: auto;
+    font-family: sans-serif; /*Tipo de fuente sin serifas. No agotan tanto la vista durante
+                            la lectura*/
+    margin-left: auto; /*Margen izquierdo se alinea automáticamente*/
     max-width: 40%;
-    text-align: left;
+    text-align: left; /*Alinea el texto a la izquierda*/
 }
 
 .qs-destacado {
-    font-size: 2em !important;
-    margin-top: 20px;
+    font-size: 2em !important; /*Con !important lo hemos forzado porque predomina otro estilo*/
+    margin-top: 20px; /*Margen superior de 20px*/
     color: orange;
     font-weight: bold !important;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9)!important;
 }
 
 .qs-texto p{
-    font-weight: 500;
+    font-weight: 500; /*Similar a la negrita, pero más personalizado*/
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);
 } 
 
 .quienes-somos nav{
-    z-index: 999;
+    z-index: 999; /*El menú siempre por encima de todas las capas. Se incorpora .quienes-somos
+                    para no afectar al resto de páginas del sitio web*/
 }
 
 .quienes-somos {
-    background-image: none;
+    background-image: none; /*Elimina la imagen de fondo genérica*/
 }
 
 .quienes-somos .copyright{
@@ -665,9 +682,10 @@ label {
 }
 
 .enlace-index{
-    text-decoration: none;
-    color: inherit;
-    cursor: pointer;
+    text-decoration: none; /*Quitamos el subrayado del enlace. Pinchando el título nos
+                            devolverá a index.html*/
+    color: inherit; /*Hereda el color del padre*/
+    cursor: pointer; /*Cambia el cursor a una mano cuando pasas sobre él*/
 }
 
 /*----------------------------------------------------------------*/
@@ -733,7 +751,7 @@ label {
         margin: 0 auto;
         max-width: 100%;
         box-sizing: border-box;
-        overflow-wrap: break-word;
+        overflow-wrap: break-word; /*Permite que las palabras largas se corten*/
     }
 
     .qs-texto h1{
