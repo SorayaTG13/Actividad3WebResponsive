@@ -9,6 +9,7 @@
     box-sizing: border-box;
 }
 html {
+    font-family: 'Rubik', sans-serif;
     background-image: url(img/fondo2.jpeg);
     background-repeat: no-repeat;
     background-position: center;
@@ -17,7 +18,7 @@ html {
     height: 100%;
     overflow: auto;
     z-index: 1000;
-    background-color: whitesmoke;
+    background-color:rgba(245, 245, 245, 1);
 }
 
 section{
@@ -33,7 +34,7 @@ section{
     position: absolute;
     bottom: 0px;
     right: 0px;
-    background: rgb(2, 112, 108, 0.386);
+    background: rgba(2, 112, 108, 0.386);
     clip-path: polygon();
     width: 210px;
     height: 100%;
@@ -80,7 +81,7 @@ nav .nav li a{
     background: linear-gradient(135deg, rgba(125,185,232,1) 0%,rgba(45,68,105,1) 50%,rgba(45,68,105,1) 51%,rgba(125,185,232,1) 100%);
     border-color: rgb(2, 112, 108, 0.386);
     border-style: solid;
-    color: whitesmoke;
+    color:rgba(245, 245, 245, 1);
     text-decoration: none;
     border-radius: 12px;
     min-width: 170px;
@@ -137,14 +138,14 @@ nav .nav li:hover > ul{
 
 .contenido .tituloBox h2{
     font-size: 2.2em;
-    color: black;
+    color: rgba(0, 0, 0, 1);
     margin-top: 30px;
     font-family: "Rubik", sans-serif;
 }
 
 .contenido .tituloBox h2 a{
     background: rgb(239, 96, 25);
-    color: whitesmoke;
+    color: rgba(245, 245, 245, 1);
     padding: 5px 10px;
     font-family: "Rubik", sans-serif;
     font-weight: 600;
@@ -152,14 +153,14 @@ nav .nav li:hover > ul{
 }
 
 .contenido .tituloBox h2 a:hover{
-    color:white;
-    background-color: #2D4469;
+    color:rgba(255,255,255,1);
+    background-color:rgba(45, 68, 105, 1);
     transition: 0.5s;
 }
 
 .contenido .tituloBox a{
     text-decoration: none;
-    color: rgb(255, 175, 50);
+    color: rgba(255, 175, 50, 1);
     padding: 10px 20px;
     margin: left 20px;
     letter-spacing: 2px;
@@ -169,7 +170,7 @@ nav .nav li:hover > ul{
 .frase{
     font-size: 0.5em;
     text-transform: uppercase;
-    color: white;
+    color: rgba(255,255,255,1);
 }
 
 /*Copyright*/
@@ -200,7 +201,7 @@ nav .nav li:hover > ul{
     padding: 10px;
 }
 .redesSociales li a{
-    color: #2D4469;
+    color: rgba(45, 68, 105, 1);
     font-size: 2.5em;
     transition: 0.3s;
 }
@@ -317,12 +318,6 @@ nav .nav li:hover > ul{
     header .logo {
         font-size: 3.5em;
     }
-
-
-
-
-
-
 }
 @media (max-width: 1000px) and (orientation: landscape) {
     .contenido{
@@ -393,34 +388,45 @@ nav .nav li:hover > ul{
     }
 }
 /* Formulario y LOgin*/
+.form-login{
+    background-image: none; /*Elinima la imagen de fondo del html de Formulario y login*/
+}
 body {
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Rubik', sans-serif; /*El tipo de funte a aplicar en todo el body*/
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; 
+}
+.back-form-login{
+    background-image: url(img/ParqueAcuatico.jpeg);
+    background-size: cover;  /*Cubre todo el fondo*/
+    background-position:  center; /*Centra la imagen de fondo*/
+    height: 100%; /*Para que cubra el 100% del fondo*/
+    background-attachment: fixed; /*Fija la imagen para que no cambie de tamaño*/
+
 }
 .container1 {
     
-    position: fixed;
+    position: fixed; /*Fija el formulario aunque se haga scroll*/
     padding: 10px;
     top: 0px;
     left: 0px;
     width: 100%;
     height: 100%;
-    display: flex;
+    display: flex; /*Centra el forlulario tento vertical como horizontalmente*/
     justify-content: center;
     align-items: center;
-    background-color: rgba(0,0,0,0.6);
-    overflow: auto;
-    box-sizing: border-box;
+    background-color: rgba(0,0,0,0.4);
+    overflow: auto; /*Permite hacer scroll si el tamaño en mas grande que la pantalla*/
+    box-sizing: border-box; 
 }
 
 .form-box {
     font-family: 'Rubik' sans-serif;
     background-color:rgba(255, 255, 255, 0.5);
-    padding: 30px 40px;
-    border-radius: 16px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    padding: 30px 40px; /*Espacios dentro del contenido*/
+    border-radius: 16px; /*circunferencia de los bordes*/
+    box-shadow: 0 0 15px rgba(0,0,0,0.3); /*Sobra para separar del fondo*/
     max-width: 550px;
     width: 100%;
     text-align: left;
@@ -430,8 +436,8 @@ body {
 
 .form-box h2 {
     font-family: 'Rubik', sans-serif;
-    margin-bottom: 20px;
-    color: rgb(239, 96, 25);
+    margin-bottom: 20px; /*Espaciado abajo para que no se junte con el texto siguiente*/
+    color: rgb(0, 0, 0,1);
     font-size: 24px;
 }
 
@@ -441,7 +447,7 @@ body {
     padding: 10px;
     margin: 12px;
     border-radius: 12px;
-    font-size: 1em;
+    font-size: 1em; /*Fuente del mismo tamaño que el resto de la pagina*/
 } 
 
 .form-box button {
@@ -449,47 +455,47 @@ body {
 }
 
 label {
-    display: inline-flex ; 
+    display: inline-flex ; /*Texto en linea con checkbox*/
     align-items: center;
     margin-right: 0px;
 }
 
 
 .btn {
-    background-color:rgb(239, 96, 25);
-    color: black;
+    background-color:rgba(239, 96, 25, 1);
+    color: rgba(0, 0, 0, 1);
     padding: 10px;
     border: none;
-    border-radius: 12px;
+    border-radius: 12px; /*Redondeo bordes*/
     font-weight: bold;
     font-size: 1em;
     cursor: pointer;
     width: 100%;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease; /*Transicion para cambio de color*/
 }
 
 .btn:hover {
-    background-color: #2d4469;
-    color: white;
+    background-color: rgba(45, 68, 105, 1);
+    color: rgba(255, 255, 255, 1);
     
 }
 
 .form-box a {
-    color: #2d4469;
-    text-decoration: none;
+    color: rgba(45, 68, 105, 1);
+    text-decoration: none; /*Quita el subrayado del enlace*/
     font-weight: 600;
 }
 
 .form-box a:hover {
-    text-decoration: underline;
+    text-decoration: underline; /*Se añada subrayado cuando ponen el raton por encima para indicar que es clicable*/
 }
-.cerrar:hover {
-    color: rgb(239, 96, 25);
-}
+
+
+/*********Responsive para pantallas grandes*********/
 
 @media (min-width: 1300px) {
     .form-box {
-      max-width: 700px;
+      max-width: 700px; /*se hace mas ancho con pantallas grandes*/
       font-size: 1.1em;
       padding: 40px 60px;
     }
@@ -499,14 +505,16 @@ label {
     }
   
     .btn {
-      font-size: 1.1em;
+      font-size: 1.1em; /*Aumenta el tamaño de la letra del boton*/
     }
   }
 
+  /*********Responsive pantallas medianas*****/
+
   @media (min-width: 768px) and (max-width: 1024px) {
     .form-box {
-      max-width: 90%;
-      padding: 30px;
+      max-width: 90%; /*Se ajusta a casi todo el ancho de pantalla*/
+      padding: 30px; /*Se ajusta el expacio interior*/
       font-size: 1em;
     }
   
@@ -519,10 +527,12 @@ label {
     }
   
     label {
-      flex-wrap: wrap;
+      flex-wrap: wrap; /*Se ajustan los textos para que nos e corten*/
       font-size: 0.95em;
     }
   }
+
+  /********Responsive para movil*******/
 
   @media (max-width: 767px) {
     .container1 {
@@ -552,8 +562,8 @@ label {
     }
   
     label {
-      flex-direction: column;
-      align-items: flex-start;
+      flex-direction: column; /*ponen en texto del formulario en columna*/
+      align-items: flex-start; 
       font-size: 0.9em;
     }
   }
@@ -620,7 +630,7 @@ label {
                     diseños responsive*/
     margin-bottom: 20px;/*Aporta espacio para lo que viene tras el título. Es importante
                         para aportar aire al diseño*/
-    color: white; /*Color de la fuente*/
+    color:rgba(255, 255, 255, 1); /*Color de la fuente*/
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /*Añade una sombra al texto para que
                                                     no esté tan pegada al fondo. Aportar
                                                     claridad en la lectura.*/
@@ -637,7 +647,7 @@ label {
                         respecto a él, pero permite mover los elementos ligeramente*/
     z-index: 2;
     max-width: 800px; /*Máximo ancho que ocupa en su contenedor*/
-    color: white;
+    color: rgba(255, 255, 255, 1);
     font-family: sans-serif; /*Tipo de fuente sin serifas. No agotan tanto la vista durante
                             la lectura*/
     margin-left: auto; /*Margen izquierdo se alinea automáticamente*/
@@ -648,7 +658,7 @@ label {
 .qs-destacado {
     font-size: 2em !important; /*Con !important lo hemos forzado porque predomina otro estilo*/
     margin-top: 20px; /*Margen superior de 20px*/
-    color: orange;
+    color: rgba(255, 165, 0, 1);
     font-weight: bold !important;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9)!important;
 }
@@ -781,66 +791,55 @@ label {
 }
 
 /*Areas de actuacion*/
+.areas-de-actuacion{
+    background-image: none;
+}
 .areas {
-    display: none;
-    position: absolute;
+    display: none; /*Oculta el submenu por defecto*/
+    position: absolute; /*Coloca el submenu en realcion con su contenedor mas cercano*/
     right: 100%;
     background: transparent;
     top: 0;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     padding: 0;
     min-width: 150px;
-    z-index: 100;
+    z-index: 100; /*Asegura que el submenu me muestre por encima de otros elementos*/
     border-radius: 12px;
     
 }
+
 .areas li {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); /*Añade un pequeño borde para direfenciarlo de cada elemento del submenu*/
 }
 
 .areas li a {
-    display: block;
+    display: block; /*Hace que ocupe todo el ancho disponible*/
     padding: 10px 15px;
+    color: rgba(51, 51, 51, 1); 
+    text-decoration: none;
     border-radius: 5px; 
 }
 
 .areas li a:hover {
     background: rgba(0, 0, 0, 0.1); 
-    color:white; 
-}
-
-
-nav .nav > li:hover > .areas {
-    display: block;
-}
-.areas li {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
-}
-.areas li a {
-    padding: 10px 15px;
-    color: #333; 
-    text-decoration: none;
-    display: block;
-}
-.areas li a:hover {
     background-color:rgb(239, 96, 25);  /* Color para hover */
-    color: white;
+    color:rgba(255, 255, 255, 1); 
 }
+
 nav .nav > li:hover > .areas {
-    display: block;
+    display: block; /*Muestra el submenu oculto*/
 }
-.areas li {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
-}
-.areas li a {
-    padding: 10px 15px;
-    color: #333; 
-    text-decoration: none;
-    display: block;
+
+.new-fondo{
+    background-image: url(img/beautiful-shot-ferris-wheel-amusement-park-against-blue-sky.jpg);
+    background-size: cover;  
+    background-position: top center; /*Imagen superior y centrada*/
+    min-height: 100vh; /*Asegura que el contenedor tenga el 100% de la altura de la ventana*/
+    background-attachment: fixed; /*Fondo fijo mientras scroll*/
 }
 
 .region {
-    display: none;
+    display: none; /*Oculta el contenido que no tiene que estar*/
     margin: 50px auto; 
     padding: 20px;
     width: 90%;
@@ -848,13 +847,13 @@ nav .nav > li:hover > .areas {
     
 }
 .region:target {
-    display: block;
+    display: block; /*Muestra el contenido al del id indicado mediante #*/
 }
 
 .region h2 {
     text-align: center;
     font-size: 2.5em;
-    color: #333;
+    color: rgba(255, 255, 255, 1);
     margin-bottom: 20px;
     font-family: 'Rubik', sans-serif;
 }
@@ -866,8 +865,8 @@ nav .nav > li:hover > .areas {
     gap: 20px;
 }
 .parque {
-    background-color: #fff;
-    color: rgb(239, 96, 25);
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(239, 96, 25,1);
     font-weight: bold;
     font-size: 24px;
     border-radius: 15px;
@@ -879,7 +878,7 @@ nav .nav > li:hover > .areas {
     transition: transform 0.3s ease;
 }
 .parque:hover {
-    transform: scale(1.05); 
+    transform: scale(1.05); /*aumenta el tamaño un 105% del tamaño real*/
 }
 .parque img {
     width: 100%;
@@ -891,15 +890,15 @@ nav .nav > li:hover > .areas {
 .parque .descrip {
     margin-top: 24px;
     font-size: 18px;
-    color: black;
+    color: rgba(0, 0, 0, 1);
     margin-bottom: 20px;
-    line-height: 1.6;
+    line-height: 1.6; /*Aumenta el espacio entre lineas*/
 }
 
 .parque .bnt-compra {
-    display: inline-block;
-    background-color: rgb(239, 96, 25);
-    color: black;
+    display: inline-block; /*Actua como bloque en linea*/
+    background-color: rgba(239, 96, 25,1);
+    color: rgba(0, 0, 0, 1);
     text-decoration: none;
     padding: 10px 20px;
     border-radius: 25px;
@@ -908,11 +907,12 @@ nav .nav > li:hover > .areas {
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 .parque .bnt-compra:hover {
-    background-color: #2d4469;
-    color: white;
+    background-color: rgba(45, 68, 105, 1);
+    color: rgba(255, 255, 255, 1);
     transform: scale(1.1); 
 }
 
+/******Responsive Pantalla grande*****/
 
 @media (min-width: 1300px) {
     .parque {
@@ -929,6 +929,7 @@ nav .nav > li:hover > .areas {
       font-size: 1.1em;
     }
   }
+  /****Resposive pantalla mediana*****/
   
   @media (min-width: 768px) and (max-width: 1024px) {
     .parques {
@@ -958,7 +959,7 @@ nav .nav > li:hover > .areas {
     }
   }
   
-
+  /******Responsive Movil*****/ 
   @media (max-width: 767px) {
     .parques {
       flex-direction: column;
@@ -997,7 +998,7 @@ nav .nav > li:hover > .areas {
     .areas {
       position: static;
       width: 100%;
-      background: #f7f7f7;
+      background: rgba(247, 247, 247, 1);
       box-shadow: none;
       padding: 10px 0;
     }
